@@ -39,7 +39,7 @@ class Maltego:
             for data in node_xml:
                 maltego_entity = data.find(f'{{{mtg_ns}}}MaltegoEntity')
                 if maltego_entity:
-                    node['type'] = maltego_entity.attrib['type']
+                    node['maltego_entity_type'] = maltego_entity.attrib['type']
                     for field in maltego_entity.find(f'{{{mtg_ns}}}Properties'):
                         name = field.attrib['name']
                         node[name] = field.find(f'{{{mtg_ns}}}Value').text
