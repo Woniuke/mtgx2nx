@@ -5,6 +5,8 @@
 **[Maltego](https://www.maltego.com/)** is a powerful intelligence analysis tool. but sometimes, It looks like a galaxy when you have a graph contains millions of nodes and vertices. It's very difficult to analysis complex graph directly.  
 **mtgx2nx** can transform mtgx file to networkx graph. **[networkx](https://networkx.org/)** is famous python package for complex network analysis.
 
+Github: https://github.com/Woniuke/mtgx2nx
+
 ## Install
 ```
 $ python setup.py install
